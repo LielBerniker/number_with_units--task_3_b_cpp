@@ -1,14 +1,10 @@
 #pragma once
-#include <string>
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <map>
-#include <utility>
-#include <stack>
-#include <sstream>
-#include <cmath> 
-#include <exception>
+#include <string>// hold string functions
+#include <iostream>// 
+#include <fstream> // contain ifstream
+#include <map> // conatin the map
+#include <queue>// for queue functions
+#include <exception>// hold the exeptions
 
 namespace ariel
 {
@@ -22,10 +18,10 @@ namespace ariel
         double get_num()const;
         std::string get_unit()const;
         friend NumberWithUnits operator+(const NumberWithUnits& num_u1,const NumberWithUnits& num_u2);
-        NumberWithUnits operator+();
+        NumberWithUnits operator+() const;
         NumberWithUnits& operator+=(const NumberWithUnits& num_u);
         friend NumberWithUnits operator-(const NumberWithUnits& num_u1,const NumberWithUnits& num_u2);
-        NumberWithUnits operator-();
+        NumberWithUnits operator-() const;
         NumberWithUnits& operator-=(const NumberWithUnits& num_u);
 
         friend bool operator<(const NumberWithUnits& num_u1,const NumberWithUnits& num_u2);
